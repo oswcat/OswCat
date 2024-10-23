@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>OswCat</title>
+    <link rel="icon" type="image/png" href="img/c81fb1579ac2869633c782be01415b11.jpg">
+    
+    <!-- Carga de Bootstrap desde CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    
+    <!-- Hoja de estilos personalizada -->
+    <link rel="stylesheet" href="./css/styles.css">
+    
+    <style>
+        .hero {
+            min-height: 100vh;
+            background: url('img/portada.webp') no-repeat center center/cover;
+        }
+        .service-card i {
+            font-size: 3rem;
+            color: #007bff;
+        }
+    </style>
+    
+    <!-- JavaScript de Bootstrap (opcional, solo si se necesita) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-oBqDVmMz4fnFO9gybG7rjtKnY0H9r8t7Q5q9I8C72jOS5gJzC0bAzF1rc5g/HIcF" crossorigin="anonymous"></script>
+</head>
+
+<body id="top">
+    <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">OswCat</a> <!-- Cambia a la ruta de tu página de inicio -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Inicio</a> <!-- Cambia a la ruta de tu página de inicio -->
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/Redes.html">Redes</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="./pages/IA.HTML">Inteligencia Artificial</a>
+                      </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.min.js"></script>
+
+  
+    <!-- Hero Section -->
+    <section class="hero d-flex align-items-center">
+      <div class="container text-center text-white">
+        <h1 class="display-3">Bienvenido a OswCat</h1>
+        <p class="lead">Una plataforma moderna para tus necesidades tecnológicas</p>
+        <a href="#services" class="btn btn-primary btn-lg">Descubre Más</a>
+      </div>
+    </section>
+
+    <!-- Sección de Servicios -->
+    <section id="services" class="py-5">
+      <div class="container">
+        <h2 class="text-center mb-5">Temas  de Interés</h2>
+
+        <div class="row">
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card h-100 text-center service-card">
+              <div class="card-body">
+                <i class="bi bi-laptop display-1"></i>
+                <h5 class="card-title mt-4">Desarrollo Web</h5>
+                <p class="card-text">Creación de aplicaciones web modernas y escalables.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card h-100 text-center service-card">
+              <div class="card-body">
+                <i class="bi bi-gear display-1"></i>
+                <h5 class="card-title mt-4">Inteligencia  Artificial</h5>
+
+                <p class="card-text">Creación de redes neuronales  y modelos de aprendizaje automático.</p>
+
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card h-100 text-center service-card">
+              <div class="card-body">
+                <i class="bi bi-cloud display-1"></i>
+                <h5 class="card-title mt-4">Cableado Estructural.</h5>
+                <p class="card-text">Correcto manejo de un switch cisco Catalyst 2960 y sus diversas formas de conectarse.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Conoce a nuestro Equipo -->
+<section class="bg-primary text-white text-center py-5">
+  <div class="container">
+    <h2>Conoce a Nuestro Equipo</h2>
+    <p class="lead">Un equipo apasionado y experto en tecnología, listo para hacer realidad tus proyectos.</p>
+  </div>
+</section>
+
+<!-- Equipo Section -->
+<section id="equipo" class="py-5">
+  <div class="container">
+    <h2 class="text-center mb-5">Nuestro Equipo</h2>
+    <div class="row justify-content-center">
+      <div class="col-lg-4 col-md-6 mb-4">
+        <div class="card text-center">
+          <img src="./img/Redes/oswaldo.webp" class="card-img-top img-fluid" alt="Miembro del equipo 1">
+          <div class="card-body">
+            <h5 class="card-title">Martinez Alvarez Oswaldo</h5>
+            <p class="card-text">Estudiante de Ingenieria en Sistema Computacionales.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 mb-4">
+        <div class="card text-center">
+          <img src="img/Redes/maite.webp" class="card-img-top img-fluid" alt="Miembro del equipo 2">
+          <div class="card-body">
+            <h5 class="card-title">Mayte Jimenez Tavera</h5>
+            <p class="card-text">Estudiante de Ingenieria en Sistemas Computacionales.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 mb-4">
+        <div class="card text-center">
+          <img src="img/Redes/alan.jpg" class="card-img-top img-fluid" alt="Miembro del equipo 3">
+          <div class="card-body">
+            <h5 class="card-title">Alan Velazquez Jimenez</h5>
+            <p class="card-text">Estudiante de Ingenieria en Sistemas Computacionales.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="text-center">
+  <a href="#top" class="btn btn-primary">Volver arriba</a>
+</div>
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4">
+      <div class="container text-center">
+        <p>&copy; 2024 OswCat. Todos los derechos reservados.</p>
+      </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  </body>
+</html>

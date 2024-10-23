@@ -1,0 +1,642 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>S.A.T.U.R.N.</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="icon" type="image/png" href="../img/c81fb1579ac2869633c782be01415b11.jpg">
+    <style>
+      /* Estilo para reducir el tamaño de las imágenes del carrusel */
+      .carousel-item img {
+        max-height: 300px; /* Ajusta la altura máxima de las imágenes */
+        object-fit: cover; /* Para que la imagen se ajuste sin deformarse */
+      }
+    </style>
+  </head>
+  <body id="top">
+    <header>
+        <nav class="navbar navbar-expand-lg bg-light">
+            <div class="container">
+                <a class="navbar-brand" href="../index.html">OswCat</a> <!-- Cambia a la ruta de tu página de inicio -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a> <!-- Cambia a la ruta de tu página de inicio -->
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Redes.html">Redes</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="IA.HTML">Inteligencia Artificial</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container-fluid mt-5">
+      <!-- Carrusel de imágenes con transición de desvanecimiento -->
+      <div id="carouselExampleRide" class="carousel slide carousel-fade" data-bs-ride="carousel">
+          <div class="carousel-inner">
+              <!-- Imagen 1 -->
+              <div class="carousel-item active">
+                  <img src="../img/Redes/1 (1).jpeg" class="d-block w-100" alt="Imagen 1">
+              </div>
+              <!-- Imagen 2 -->
+              <div class="carousel-item">
+                  <img src="../img/Redes/1 (2).jpeg" class="d-block w-100" alt="Imagen 2">
+              </div>
+              <!-- Imagen 3 -->
+              <div class="carousel-item">
+                  <img src="../img/Redes/1 (3).jpeg" class="d-block w-100" alt="Imagen 3">
+              </div>
+          </div>
+    
+          <!-- Título centrado -->
+          <div class="carousel-caption d-flex justify-content-center align-items-center h-100">
+              <h2 class="text-white p-3">Ponchado de RJ45 y Cisco Catalyst 2960</h2>
+          </div>
+    
+          <!-- Controles del carrusel -->
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleRide" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleRide" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+          </button>
+      </div>
+    </div>
+    
+    <style>
+      /* Ajustar imágenes a la misma altura, recortando proporcionalmente */
+      .carousel-inner img {
+          width: 100%;
+          height: 500px; /* Altura fija para las imágenes */
+          object-fit: cover; /* Asegura que las imágenes se escalen sin distorsión */
+      }
+    
+      /* Asegura que el contenedor sea fluido y responsivo */
+      .container-fluid {
+          padding: 0;
+          margin: 0;
+      }
+    
+      /* Ajustar altura en dispositivos más pequeños */
+      @media (max-width: 768px) {
+          .carousel-inner img {
+              height: 300px; /* Ajuste de altura para dispositivos pequeños */
+          }
+      }
+    
+      @media (max-width: 576px) {
+          .carousel-inner img {
+              height: 200px; /* Ajuste de altura para móviles */
+          }
+      }
+    
+      .carousel {
+          margin: 0;
+          padding: 0;
+      }
+    
+      .carousel-caption h2 {
+          background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente para el título */
+          border-radius: 10px;
+      }
+    
+      /* Ajustar la transición de desvanecimiento */
+      .carousel-fade .carousel-item {
+          opacity: 0;
+          transition: opacity 0.5s ease-in-out; /* Suaviza la transición entre imágenes */
+      }
+    
+      .carousel-fade .carousel-item.active {
+          opacity: 1;
+      }
+    </style>
+    
+  
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  </body>
+  
+  <div class="container mt-5">
+    <h2 class="text-center">Tema y Descripción</h2>
+    
+    <div class="row mt-4">
+        <div class="col-lg-8 mb-4">
+            <div class="card shadow-sm">
+                <div class="row g-0">
+                    <div class="col-md-6">
+                        <img src="../img/Redes/images (1).png" class="img-fluid rounded-start zoomable" alt="Conector RJ45" style="cursor: pointer; transition: transform 0.3s ease-in-out;">
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card-body">
+                            <h5 class="card-title">Conector RJ45</h5>
+                            <p class="card-text">
+                                El conector RJ45 es crucial para la transmisión de datos en redes Ethernet, permitiendo una conexión eficiente entre dispositivos. Existen dos estándares de cableado: <strong>T568A</strong> y <strong>T568B</strong>, siendo este último el más común en instalaciones modernas.
+                            </p>
+                            <p class="card-text">
+                                Este componente es clave para asegurar una conectividad fiable. ¡Descubre más sobre su correcta instalación y evita problemas de red!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Imagen adicional a la derecha -->
+        <div class="col-lg-4 mb-4">
+            <div class="card shadow-sm">
+                <img src="../img/Redes/images.jpg" class="img-fluid rounded zoomable" alt="Cableado RJ45" style="cursor: pointer; transition: transform 0.3s ease-in-out;">
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+    .zoomable:hover {
+        transform: scale(1.05);
+    }
+
+    @media (min-width: 992px) {
+        .container {
+            max-width: 90%;
+        }
+    }
+</style>
+
+
+<!-- Estilos y JavaScript para el zoom -->
+<style>
+  .modal img {
+      width: 100%;
+  }
+</style>
+
+<!-- Modal para las imágenes -->
+<div class="modal fade" id="imageModal" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content">
+      <div class="modal-body text-center">
+        <img id="modalImage" src="" alt="Zoom de imagen">
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  // Añadir funcionalidad de zoom a la imagen
+  document.querySelector('.zoomable').addEventListener('click', function() {
+    const src = this.getAttribute('src');
+    document.getElementById('modalImage').setAttribute('src', src);
+    const myModal = new bootstrap.Modal(document.getElementById('imageModal'));
+    myModal.show();
+  });
+</script>
+
+  <div class="container mt-5">
+    <h2 class="text-center">Tabla Comparativa</h2>
+    <table class="table table-bordered mt-4">
+        <thead>
+            <tr>
+                <th class="text-center">T568A </th>
+                <th class="text-center">T568B</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Estándar de cableado estructurado para redes Ethernet. Define la disposición de los pares de colores dentro de un conector RJ45.</td>
+                <td>Estándar de cableado estructurado para redes Ethernet. Define la disposición de los pares de colores dentro de un conector RJ45.</td>
+            </tr>
+            <tr>
+                <td>Orden inverso de los pares naranja y verde en comparación con T568B.</td>
+                <td>Orden estándar de los pares naranja y verde, utilizado en la mayoría de las instalaciones.</td>
+            </tr>
+            <tr>
+                <td>Menos utilizado en nuevas instalaciones. Puede encontrarse en instalaciones antiguas o en entornos específicos.</td>
+                <td>Más utilizado en nuevas instalaciones. Es el estándar más común en la industria</td>
+            </tr>
+            <tr>
+                <td>Puede ser útil en ciertas configuraciones de red o para solucionar problemas específicos.</td>
+                <td>Mayor compatibilidad con una amplia gama de dispositivos y equipos de red.</td>
+            </tr>
+            <!-- Puedes agregar más filas aquí -->
+            <tr>
+                <td class="text-center">
+                    <h5>T568A</h5>
+                    <img src="../img/Redes/t-568a.jpg" class="zoomable" alt="Opción 1" style="max-width: 100px; cursor: pointer;">
+                </td>
+                <td class="text-center">
+                    <h5>T568B</h5>
+                    <img src="../img/Redes/download.png" class="zoomable" alt="Opción 2" style="max-width: 100px; cursor: pointer;">
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<!-- Estilos y JavaScript para el zoom -->
+<style>
+  .modal img {
+      width: 100%;
+  }
+</style>
+
+<!-- Modal para las imágenes -->
+<div class="modal fade" id="imageModal" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content">
+      <div class="modal-body text-center">
+        <img id="modalImage" src="" alt="Zoom de imagen">
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  // Añadir funcionalidad de zoom a las imágenes
+  document.querySelectorAll('.zoomable').forEach(img => {
+    img.addEventListener('click', function() {
+      const src = this.getAttribute('src');
+      document.getElementById('modalImage').setAttribute('src', src);
+      const myModal = new bootstrap.Modal(document.getElementById('imageModal'));
+      myModal.show();
+    });
+  });
+</script>
+<div class="container mt-5">
+  <h2 class="text-center">Normativas y Reglas para un Buen Ponchado de RJ45</h2>
+  <p class="text-center">Asegúrate de seguir estas normas y recomendaciones para garantizar una instalación de cables RJ45 eficiente y duradera. Cada punto es fundamental para optimizar el rendimiento de la red.</p>
+  <table class="table table-bordered mt-4">
+      <thead class="thead-light">
+          <tr>
+              <th class="text-center">Punto</th>
+              <th class="text-center">Descripción</th>
+          </tr>
+      </thead>
+      <tbody>
+          <tr>
+              <td>Selección del cable</td>
+              <td>Utiliza cables de par trenzado de calidad, como Cat5e o Cat6, que cumplen con las especificaciones para redes Ethernet.</td>
+          </tr>
+          <tr>
+              <td>Estándar de cableado</td>
+              <td>Decide entre los estándares T568A o T568B y asegúrate de utilizar el mismo estándar en ambos extremos del cable para mantener la consistencia.</td>
+          </tr>
+          <tr>
+              <td>Desgaste del cable</td>
+              <td>Al pelar el cable, evita dañar los pares trenzados. Mantén el mínimo de cable pelado expuesto (no más de 1-2 cm) para reducir la interferencia.</td>
+          </tr>
+          <tr>
+              <td>Orden de los hilos</td>
+              <td>Sigue el código de colores correspondiente para el estándar elegido, asegurando que los hilos se coloquen en el orden correcto dentro del conector.</td>
+          </tr>
+          <tr>
+              <td>Longitud del cable</td>
+              <td>Mantén la longitud del cable entre los dispositivos lo más corta posible para minimizar la pérdida de señal. Se recomienda no superar los 90 metros.</td>
+          </tr>
+          <tr>
+              <td>Inserción en el conector</td>
+              <td>Asegúrate de que los hilos estén completamente insertados en el conector RJ45 y que lleguen hasta el fondo del conector para una buena conexión.</td>
+          </tr>
+          <tr>
+              <td>Uso de herramientas</td>
+              <td>Utiliza una herramienta de ponchado adecuada para asegurar que los pines del conector hagan buen contacto con los hilos del cable.</td>
+          </tr>
+          <tr>
+              <td>Pruebas de conectividad</td>
+              <td>Después de ponchar, realiza pruebas de continuidad y verificación con un probador de cables RJ45 para asegurarte de que no hay cortocircuitos.</td>
+          </tr>
+          <tr>
+              <td>Etiquetado</td>
+              <td>Etiqueta los cables en ambos extremos para facilitar la identificación y el mantenimiento futuro.</td>
+          </tr>
+          <tr>
+              <td>Protección del cable</td>
+              <td>Usa protectores de cables o canaletas para evitar daños físicos a los cables y mantener una instalación ordenada.</td>
+          </tr>
+      </tbody>
+  </table>
+</div>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ponchar un Cable RJ45</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+
+    <main>
+        <div class="container mt-5">
+            <h2 class="text-center">¿Cómo ponchar un cable RJ45 correctamente?</h2>
+            <p class="text-center">A continuación, se presentan los pasos necesarios para realizar el ponchado de un cable RJ45 de manera efectiva y segura. Cada paso incluye una descripción detallada y una imagen para facilitar la comprensión.</p>
+            
+            <!-- Tarjeta para los pasos -->
+            <div class="card">
+                <div class="card-header bg-primary text-white">
+                    Pasos para Ponchar un Cable RJ45
+                </div>
+                <div class="card-body">
+                    <table class="table table-bordered mt-4 text-center">
+                        <thead class="table-light">
+                            <tr>
+                                <th scope="col">Paso</th>
+                                <th scope="col">Descripción</th>
+                                <th scope="col">Imagen</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!-- Paso 1 -->
+                            <tr>
+                                <th scope="row">1</th>
+                                <td>Pela 2-3 cm de la funda exterior del cable UTP, cuidando no dañar los cables internos.</td>
+                                <td>
+                                    <img src="../img/Redes/paso1.jpg" alt="Paso 1" class="img-fluid" style="max-width: 150px;">
+                                </td>
+                            </tr>
+                            <!-- Paso 2 -->
+                            <tr>
+                                <th scope="row">2</th>
+                                <td>Separa los 8 cables y ordénalos según el estándar T568B: <br>1. Blanco/Naranja<br>2. Naranja<br>3. Blanco/Verde<br>4. Azul<br>5. Blanco/Azul<br>6. Verde<br>7. Blanco/Marrón<br>8. Marrón.</td>
+                                <td>
+                                    <img src="../img/Redes/paso2.jpg" alt="Paso 2" class="img-fluid" style="max-width: 150px;">
+                                </td>
+                            </tr>
+                            <!-- Paso 3 -->
+                            <tr>
+                                <th scope="row">3</th>
+                                <td>Recorta los cables de manera que queden parejos, aproximadamente a 1.5 cm de la funda.</td>
+                                <td>
+                                    <img src="../img/Redes/paso3.jpg" alt="Paso 3" class="img-fluid" style="max-width: 150px;">
+                                </td>
+                            </tr>
+                            <!-- Paso 4 -->
+                            <tr>
+                                <th scope="row">4</th>
+                                <td>Inserta los cables en el conector RJ45, asegurándote de que los pines dorados estén hacia arriba y los cables lleguen hasta el fondo.</td>
+                                <td>
+                                    <img src="../img/Redes/paso4.jpg" alt="Paso 4" class="img-fluid" style="max-width: 150px;">
+                                </td>
+                            </tr>
+                            <!-- Paso 5 -->
+                            <tr>
+                                <th scope="row">5</th>
+                                <td>Usa la herramienta de ponchado para fijar los cables al conector. Aprieta con firmeza hasta escuchar un "clic".</td>
+                                <td>
+                                    <img src="../img/Redes/paso5.jpg" alt="Paso 5" class="img-fluid" style="max-width: 150px;">
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="card-footer text-muted">
+                    Asegúrate de seguir todos los pasos para garantizar una correcta conexión del cable RJ45.
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    
+
+<!-- Modal para hacer zoom a las imágenes -->
+<div class="modal fade" id="imageModal" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-body">
+                <img id="modalImage" src="" alt="Imagen grande" class="img-fluid">
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    // Script para cambiar la imagen en el modal
+    document.querySelectorAll('.img-thumbnail').forEach(image => {
+        image.addEventListener('click', function() {
+            const modalImage = document.getElementById('modalImage');
+            modalImage.src = this.src; // Establece la fuente de la imagen del modal a la imagen en miniatura
+        });
+    });
+</script>
+<!-- Modal para hacer zoom a las imágenes -->
+<div class="modal fade" id="imageModal" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-body">
+                <img id="modalImage" src="" alt="Imagen grande" class="img-fluid">
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    // Cambiar la imagen dentro del modal cuando se haga clic en cualquier imagen de la tabla
+    document.querySelectorAll('.step-table img').forEach(img => {
+        img.addEventListener('click', function() {
+            const modalImage = document.getElementById('modalImage');
+            modalImage.src = this.src;  // Asigna la ruta de la imagen seleccionada
+        });
+    });
+</script>
+
+<div class="container-fluid mt-5 p-5 bg-dark text-white">
+  <!-- Título del video -->
+  <h2 class="text-center text-white">Ponchado de RJ45</h2>
+
+  <!-- Fondo con viñeta oscura para el video -->
+  <div class="d-flex justify-content-center">
+    <div class="shadow p-4 rounded" style="max-width: 800px; border-radius: 8px; width: 100%;">
+      <div class="embed-responsive embed-responsive-16by9">
+        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/hKgCy9V1Cus" allowfullscreen></iframe>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- Sección para el Switch Cisco Catalyst 2960 -->
+<div class="container mt-5">
+  <h1 class="text-center mb-4">Switch Cisco Catalyst 2960 de 24 puertos</h1>
+  
+  <!-- Tarjeta de información del switch -->
+  <div class="card">
+      <div class="card-header bg-primary text-white">
+          Características del Switch
+      </div>
+      <div class="card-body">
+          <h5 class="card-title">Cisco Catalyst 2960 de 24 Puertos</h5>
+          <p class="card-text">
+              El switch Cisco Catalyst 2960 es un switch de capa 2 diseñado para ofrecer conectividad de alta velocidad, seguridad, y gestión avanzada de red en redes empresariales pequeñas y medianas.
+          </p>
+          <ul>
+              <li><strong>Puertos:</strong> 24 puertos Fast Ethernet (10/100 Mbps) o Gigabit Ethernet (10/100/1000 Mbps).</li>
+              <li><strong>Conectividad:</strong> Algunos modelos incluyen puertos SFP para enlaces de fibra óptica.</li>
+              <li><strong>VLANs:</strong> Soporta Virtual Local Area Networks para segmentar redes.</li>
+              <li><strong>Seguridad:</strong> Incluye características como ACLs, DHCP snooping, ARP spoofing y autenticación 802.1X.</li>
+              <li><strong>QoS:</strong> Prioriza el tráfico crítico como voz y video.</li>
+              <li><strong>Gestión:</strong> Administrable mediante Cisco IOS, CLI y SNMP.</li>
+              <li><strong>PoE:</strong> Algunos modelos soportan Power over Ethernet.</li>
+          </ul>
+      </div>
+      <div class="card-footer text-muted">
+          Última actualización: Octubre 2024
+      </div>
+  </div>
+
+  <!-- Imagen del Switch Cisco Catalyst 2960 -->
+  <div class="text-center mt-4">
+      <img src="../img/Redes/2960.jpg" class="img-fluid" alt="Cisco Catalyst 2960">
+  </div>
+</div>
+
+<!-- Sección para Configurar el Switch con PuTTY -->
+<div class="container mt-5">
+  <h2 class="text-center mb-4">Configuración del Cisco Catalyst 2960 con PuTTY</h2>
+  
+  <!-- Tarjeta para el tutorial de configuración -->
+  <div class="card">
+      <div class="card-header bg-success text-white">
+          Pasos para Configurar el Switch con PuTTY y Cable de Consola
+      </div>
+      <div class="card-body">
+          <p class="card-text">
+              A continuación, te mostramos cómo configurar tu Switch Cisco Catalyst 2960 usando PuTTY y un cable de consola:
+          </p>
+          <ol>
+              <li>Conecta el cable de consola al puerto de consola del switch y el otro extremo al puerto serie de tu computadora o a un adaptador USB a serie.</li>
+              <li>Descarga e instala <strong>PuTTY</strong> en tu computadora, si aún no lo tienes instalado.</li>
+              <li>Abre PuTTY y selecciona la opción <strong>Serial</strong> en la sección "Connection type".</li>
+              <li>Configura la <strong>velocidad de comunicación (Baud rate)</strong> a <strong>9600</strong>, que es la predeterminada para la mayoría de los dispositivos Cisco.</li>
+              <li>Haz clic en <strong>Open</strong> para iniciar la conexión.</li>
+              <li>Presiona la tecla <strong>Enter</strong> para acceder a la consola del switch. Deberías ver el mensaje de bienvenida del Cisco Catalyst.</li>
+              <li>Desde aquí, puedes comenzar a configurar el switch utilizando los comandos del sistema operativo Cisco IOS.</li>
+          </ol>
+      </div>
+      <div class="card-footer text-muted">
+          Asegúrate de guardar la configuración del switch usando el comando <code>write memory</code> o <code>copy running-config startup-config</code>.
+      </div>
+  </div>
+
+  <!-- Imagen de la conexión con PuTTY -->
+  <div class="text-center mt-4">
+      <img src="../img/Redes/leds cisco.png" class="img-fluid" alt="Configuración de PuTTY con Cisco Catalyst 2960">
+  </div>
+</div>
+
+
+<!-- Estilos y JavaScript para el zoom -->
+<style>
+.modal img {
+    width: 100%;
+}
+</style>
+
+<!-- Modal para las imágenes -->
+<div class="modal fade" id="imageModal" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+<div class="modal-dialog modal-dialog-centered modal-lg">
+  <div class="modal-content">
+    <div class="modal-body text-center">
+      <img id="modalImage" src="" alt="Zoom de imagen">
+    </div>
+  </div>
+</div>
+</div>
+
+
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prácticas No Recomendadas para Cisco Catalyst 2960</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+
+
+<div class="container mt-5">
+    <h2 class="text-center mb-4">Prácticas No Recomendadas para Cisco Catalyst 2960</h2>
+    
+    <!-- Tarjeta para las prácticas no recomendadas -->
+    <div class="card">
+        <div class="card-header bg-danger text-white">
+            Acciones a Evitar
+        </div>
+        <div class="card-body">
+            <table class="table table-bordered table-striped">
+                <thead class="thead-light">
+                    <tr>
+                        <th>Acción</th>
+                        <th>Descripción</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>No sobrecargar los puertos</td>
+                        <td>Evita conectar demasiados dispositivos que excedan la capacidad de los puertos del switch.</td>
+                    </tr>
+                    <tr>
+                        <td>No usar configuraciones predeterminadas</td>
+                        <td>No dejes configuraciones de seguridad o administración por defecto. Cambia contraseñas y ajusta los parámetros de seguridad.</td>
+                    </tr>
+                    <tr>
+                        <td>No ignorar las actualizaciones de firmware</td>
+                        <td>No descuides la actualización del firmware del switch para evitar vulnerabilidades de seguridad.</td>
+                    </tr>
+                    <tr>
+                        <td>No usar VLANs incorrectamente</td>
+                        <td>No mezcles tráfico de diferentes VLANs sin configurar adecuadamente las políticas de seguridad.</td>
+                    </tr>
+                    <tr>
+                        <td>No desactivar la redundancia</td>
+                        <td>No desactives protocolos de redundancia como Spanning Tree Protocol (STP) sin entender las implicaciones.</td>
+                    </tr>
+                    <tr>
+                        <td>No realizar cambios sin documentación</td>
+                        <td>No hagas cambios en la configuración sin documentarlos adecuadamente para facilitar el mantenimiento.</td>
+                    </tr>
+                    <tr>
+                        <td>No deshabilitar el acceso seguro</td>
+                        <td>No desactives SSH o el acceso seguro a la administración del switch. Utiliza siempre métodos seguros.</td>
+                    </tr>
+                    <tr>
+                        <td>No ignorar las alertas de hardware</td>
+                        <td>No ignores las advertencias de temperatura o estado del hardware; esto puede indicar problemas inminentes.</td>
+                    </tr>
+                    <tr>
+                        <td>No conectar dispositivos de red mal configurados</td>
+                        <td>No conectes dispositivos que tengan configuraciones IP en conflicto o erróneas.</td>
+                    </tr>
+                    <tr>
+                        <td>No hacer pruebas sin un plan</td>
+                        <td>No realices pruebas de configuración o cambios importantes sin un plan de respaldo.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="card-footer text-muted">
+            Estas prácticas ayudarán a mantener la seguridad y el rendimiento del switch.
+        </div>
+    </div>
+</div>
+
+<div class="text-center">
+  <a href="#top" class="btn btn-primary">Volver arriba</a>
+</div>
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4">
+      <div class="container text-center">
+        <p>&copy; 2024 OswCat. Todos los derechos reservados.</p>
+      </div>
+    </footer>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>
