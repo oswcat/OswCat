@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="../css/styles.css">
 </head>
 
-<body id="top">
+<body id="top" class="d-flex flex-column min-vh-100">
     <header>
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <div class="container">
@@ -37,28 +37,34 @@
         </nav>
     </header>
 
-    <main class="container my-5">
+    <main class="container my-5 flex-grow-1">
         <div class="text-center mb-4">
             <label for="info" class="h4">¿Para qué sirve?</label>
         </div>
-        <div id="info" class="form-control mb-4" style="max-width: 600px; margin: auto; padding: 15px; border: 1px solid #ccc; border-radius: 5px; background-color: #f9f9f9; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);">
+        <div id="info" class="form-control mx-auto mb-4 p-4" style="max-width: 600px; background-color: #f9f9f9; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);">
             Este programa de reconocimiento de perros y gatos a través de una cámara del celular representa un avance significativo en la aplicación de la inteligencia artificial y la visión por computadora. Su capacidad para distinguir rápidamente entre estas dos especies proporciona una herramienta valiosa y versátil para diversos usuarios y aplicaciones.
         </div>
-    
+
         <div class="text-center mb-4">
-            <button class="shadow__btn" id="cambiar-camara" onclick="cambiarCamara();">Cambiar cámara</button>
+            <button class="btn btn-primary" id="cambiar-camara" onclick="cambiarCamara();">Cambiar cámara</button>
         </div>
-        
-        <video id="video" width="400" height="400" style="max-width: 100%; display: block;"></video>
-        <canvas id="canvas" width="400" height="400" style="max-width: 100%;"></canvas>
-        <canvas id="otrocanvas" width="150" height="150" style="display: none;"></canvas>
-        <div id="resultado"></div>
-    
+
+        <div class="d-flex justify-content-center align-items-center flex-column">
+            <video id="video" class="mb-2" style="width: 100%; max-width: 400px; display: block; border: 1px solid #ccc; border-radius: 8px;"></video>
+            <canvas id="canvas" class="mb-3" style="width: 100%; max-width: 400px; display: block; border: 1px solid #ccc; border-radius: 8px;"></canvas>
+            <div id="resultado" class="h5 text-center mb-4"></div>
+        </div>
+
         <div class="text-center my-4">
             <a href="#top" class="btn btn-primary">Volver arriba</a>
         </div>
     </main>
-    
+
+    <footer class="bg-dark text-white py-4 text-center">
+        <div class="container">
+            <p>&copy; 2024 OswCat. Todos los derechos reservados.</p>
+        </div>
+    </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@2.0.0/dist/tf.min.js"></script>
@@ -91,20 +97,21 @@
                 video: {
                     width: tamano, height: tamano
                 }
-            }
+            };
 
             if (navigator.mediaDevices.getUserMedia) {
                 navigator.mediaDevices.getUserMedia(opciones)
                     .then(function(stream) {
                         currentStream = stream;
                         video.srcObject = currentStream;
+                        video.play();
                         procesarCamara();
                         predecir();
                     })
                     .catch(function(err) {
                         alert("No se pudo utilizar la cámara :(");
-                        console.log(err);
-                    })
+                        console.log("Error de acceso a la cámara:", err);
+                    });
             } else {
                 alert("No existe la función getUserMedia");
             }
