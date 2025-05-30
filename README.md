@@ -35,9 +35,9 @@
 ### 📈 Estadísticas
 
 <div align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=TU-USUARIO&show_icons=true&theme=tokyonight" alt="Estadísticas de GitHub"/>
+  <img src="https://github-readme-stats.vercel.app/api?username=OswCat&show_icons=true&theme=tokyonight" alt="Estadísticas de GitHub"/>
   <br>
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=TU-USUARIO&layout=compact&theme=tokyonight" alt="Lenguajes más usados"/>
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=OswCat&layout=compact&theme=tokyonight" alt="Lenguajes más usados"/>
 </div>
 
 ---
