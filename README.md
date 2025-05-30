@@ -65,5 +65,5 @@
 ---
 
 <p align="center">
-  <img src="https://komarev.com/ghpvc/?username=TU-USUARIO&label=Visitas&color=blue&style=flat" alt="contador de visitas"/>
+  <img src="https://komarev.com/ghpvc/?username=OswCat&label=Visitas&color=blue&style=flat" alt="contador de visitas"/>
 </p>
